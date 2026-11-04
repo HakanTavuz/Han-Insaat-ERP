@@ -1,6 +1,6 @@
 # HanSiparis
 
-Yapı malzemesi satan bir firma için yazdığım masaüstü sipariş ve cari takip programı (ERP). Babamın yıllardır Excel'le yürüttüğü sipariş sürecini tek bir uygulamada toplamak için yaptım; şu an firmada günlük olarak kullanılıyor.
+Yapı malzemesi satan bir firma için yazdığım masaüstü sipariş ve cari takip programı (ERP). Firmanın Excel'le yürüttüğü sipariş sürecini tek bir uygulamada toplamak için yaptım; şu an firmada günlük olarak kullanılıyor.
 
 ## Ne işe yarıyor
 
