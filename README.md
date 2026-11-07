@@ -37,7 +37,7 @@ Tamamen **çevrimdışı** çalışır, veriler kullanıcının bilgisayarında 
 - **Masaüstü uygulama** — Python + yerel web sunucusu; kendi penceresinde açılır, kurulum sihirbazıyla gelir
 - **Veritabanı** — SQLite; her açılışta otomatik yedek
 - **Çıktı** — PDF (ReportLab) ve formüllü Excel (openpyxl)
-- **Dağıtım** — GitHub Actions ile derlenir, makine koduna çevrilir (Nuitka) ve kendini otomatik günceller
+- **Dağıtım** — GitHub Actions ile derlenir,
 
 ## Telif ve Kullanım
 
