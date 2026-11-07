@@ -1,19 +1,43 @@
-# HanSiparis
+<div align="center">
 
-Yapı malzemesi satan bir firma için yazdığım masaüstü sipariş ve cari takip programı (ERP). Firmanın Excel'le yürüttüğü sipariş sürecini tek bir uygulamada toplamak için yaptım; şu an firmada günlük olarak kullanılıyor.
+<img src="logo.png" alt="Han İnşaat" width="320">
+
+# Han Sipariş
+
+**Yapı malzemesi firması için masaüstü sipariş ve cari takip programı (ERP)**
+
+Excel'le yürütülen sipariş sürecini tek bir uygulamada toplar — şu an bir firmada günlük kullanımda.
+
+![Sürüm](https://img.shields.io/github/v/release/HakanTavuz/han-erp-surum?label=s%C3%BCr%C3%BCm&color=D0222B)
+![Platform](https://img.shields.io/badge/platform-Windows-0078D6)
+![Çalışma](https://img.shields.io/badge/çalışma-çevrimdışı-2e7d32)
+![Lisans](https://img.shields.io/badge/lisans-özel-555)
+
+</div>
+
+---
 
 ## Ne işe yarıyor
 
-Firma eskiden her siparişi elle Excel'e giriyor, fiyatları elle hesaplıyor, eski kayıtları dosya yığınından bulmaya çalışıyordu. Program bunların hepsini tek yere topluyor:
+Firma eskiden her siparişi elle Excel'e giriyor, fiyatları elle hesaplıyor, eski kayıtları dosya yığınından bulmaya çalışıyordu. Program bunların hepsini tek yerde topluyor:
 
-- **Sipariş oluşturma** — müşteri ve ürün otomatik tamamlanıyor, tutar/KDV/toplam kendiliğinden hesaplanıyor
-- **PDF ve Excel çıktısı** — antetli teklif ve formüllü tablo
-- **Cari takip** — müşteri bakiyesi, ekstre, çek ve taksit yönetimi
-- **Belge okuma** — gelen sipariş fotoğrafını/PDF'ini yapay zeka ile okuyup kalemlere ayırıyor
-- **E-posta ve WhatsApp** — teklifi uygulama içinden gönderme
-- **Raporlar** — dönemsel satış ve ciro raporları
+|  |  |
+|---|---|
+| 🧾 **Sipariş oluşturma** | Müşteri ve ürün otomatik tamamlanıyor; tutar, KDV ve toplam kendiliğinden hesaplanıyor |
+| 📄 **PDF & Excel çıktısı** | Antetli teklif ve formüllü tablo, tek tıkla |
+| 💳 **Cari takip** | Müşteri bakiyesi, hesap ekstresi, çek/senet ve taksit yönetimi |
+| 🏷️ **Fiyat listesi okuma** | Tedarikçi fiyat listesi PDF'ini okuyup ürün fiyatlarını toplu günceller |
+| 💬 **WhatsApp** | Teklifi/siparişi müşteriye uygulama içinden gönderme |
+| 📊 **Raporlar** | Dönemsel satış ve ciro raporları |
 
-Tamamen çevrimdışı çalışıyor, veriler kullanıcının bilgisayarında kalıyor. Programın yeni sürümleri kendini otomatik güncelliyor.
+Tamamen **çevrimdışı** çalışır, veriler kullanıcının bilgisayarında kalır. Yeni sürümler **kendini otomatik günceller**.
+
+## Nasıl yapıldı
+
+- **Masaüstü uygulama** — Python + yerel web sunucusu; kendi penceresinde açılır, kurulum sihirbazıyla gelir
+- **Veritabanı** — SQLite; her açılışta otomatik yedek
+- **Çıktı** — PDF (ReportLab) ve formüllü Excel (openpyxl)
+- **Dağıtım** — GitHub Actions ile derlenir, makine koduna çevrilir (Nuitka) ve kendini otomatik günceller
 
 ## Telif ve Kullanım
 
